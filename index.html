@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Rodrigues | Psicanálise Humanizada</title>
+    <title>Dra. Maria Rodrigues | Psicanálise Humanizada</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1D1C1C;
-            --secondary: #a5b8c5;
-            --accent: #d4a59a;
+            --primary: #025589;
+            --secondary: #cf6b54;
+            --accent: #cf6b54;
             --light: #f8f9fa;
             --dark: #212529;
-            --text: #495057;
+            --text: #000000;
         }
         
         /* Reset e Estilos Globais */
@@ -696,6 +696,43 @@
                 padding: 2rem;
             }
         }
+
+ @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                z-index: 1000;
+            }
+            
+            .mobile-menu-btn i {
+                font-size: 1.8rem;
+                transition: all 0.3s ease;
+            }
+            
+            .mobile-menu-btn.active i:before {
+                content: "\f00d"; /* Ícone X do FontAwesome */
+            }
+}
     </style>
 </head>
 <body>
@@ -815,9 +852,11 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
     </section>
 
     <!-- Depoimentos -->
-    <section id="testimonials" class="testimonials">
-        <h2 class="section-title">Depoimentos</h2>
-        <div class="testimonial-slider">
+  <!--  <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Agende uma consulta</h2>
+  -->       
+         
+         <!-- <div class="testimonial-slider">
             <div class="testimonial">
                 <div class="testimonial-content">
                     "A terapia com a Maria Rodrigues transformou minha relação com minhas emoções. Hoje me sinto mais confiante e capaz de lidar com desafios que antes me paralisavam."
@@ -825,8 +864,8 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                 <div class="testimonial-author">Ana C.</div>
                 <div class="testimonial-role">Paciente desde 2021</div>
             </div>
-        </div>
-    </section>
+        </div>-->
+<!--    </section>-->
 
     <!-- Contato -->
     <section id="contact" class="contact">
@@ -843,6 +882,11 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                         <a href="tel:+5511940380409">+55 11 94038-0409</a>
                     </div>
                 </div>
+                 
+            </div>
+            
+              <div class="contact-info">
+               
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
@@ -852,6 +896,12 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                         <a href="mailto:mariarodriguespsicanalista@gmail.com">mariarodriguespsicanalista@gmail.com</a>
                     </div>
                 </div>
+                 
+            </div>
+            
+            
+              <div class="contact-info">
+              
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-clock"></i>
@@ -862,8 +912,8 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+  <!--          <div class="contact-form">
+                <form action="https://formsubmit.co/bejilima574@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
                         <label for="name">Nome</label>
@@ -885,7 +935,7 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                         Enviar Mensagem <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
-            </div>
+            </div>-->
         </div>
     </section>
 
@@ -896,9 +946,9 @@ O Círculo da Vida pode ser realizado individualmente ou em grupo.</p>
                 <h4>Maria Rodrigues</h4>
 		<p>Psicanalista dedicada a proporcionar um espaço seguro para autoconhecimento e desenvolvimento emocional.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/mariarodrigueez5/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/mariarodrigueez5/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/in/maria-da-conceiçao-rodrigues-45b79b2aa"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/maria-da-conceiçao-rodrigues-45b79b2aa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">
